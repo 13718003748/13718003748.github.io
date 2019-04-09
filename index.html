@@ -144,6 +144,164 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-第二个" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/04/09/di-er-ge/">markdown文件的基本常用编写语法</a>
+    </h1>
+  
+
+        
+        <a href="/2019/04/09/di-er-ge/" class="archive-article-date">
+  	<time datetime="2019-04-09T15:32:14.894Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-04-09</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h2 id="序言"><a href="#序言" class="headerlink" title="序言"></a>序言</h2><p>第一次搭建博客，为了记录自己工作中遇到的技术问题，人有的时候是懒惰的，学的技术点记不住，一段时间再次看，依然觉得陌生，甚至找不到文章出处了，因此搭建一个博客记录自己的工作积累，方便自己查看。</p>
+<h3 id="Markdown-是什么？"><a href="#Markdown-是什么？" class="headerlink" title="Markdown 是什么？"></a>Markdown 是什么？</h3><p>Markdown 是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以 HTML 格式发布。<br>Markdown 也可以理解为将以 MARKDOWN 语法编写的语言转换成 HTML 内容的工具。</p>
+<h3 id="为什么使用它？"><a href="#为什么使用它？" class="headerlink" title="为什么使用它？"></a>为什么使用它？</h3><ul>
+<li>它是易读（看起来舒服）、易写（语法简单）、易更改纯文本。处处体现着极简主义的影子。</li>
+<li>兼容 HTML，可以转换为 HTML 格式发布。<br>跨平台使用。</li>
+<li>越来越多的网站支持 Markdown。</li>
+<li>更方便清晰地组织你的电子邮件。（Markdown-here, Airmail）</li>
+</ul>
+<h3 id="如何使用？"><a href="#如何使用？" class="headerlink" title="如何使用？"></a>如何使用？</h3><p>Markdown 语法主要分为如下几大部分： 标题，段落，区块引用，代码区块，强调，列表，分割线，链接，图片，反斜杠 \，符号’`’。</p>
+<h4 id="标题"><a href="#标题" class="headerlink" title="标题"></a>标题</h4><p>两种形式：</p>
+<ul>
+<li>1）使用=和-标记一级和二级标题。</li>
+</ul>
+<pre class=" language-bash"><code class="language-bash"> 一级标题
+ <span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">==</span><span class="token operator">=</span>
+ 二级标题
+ ---------
+</code></pre>
+<p>效果：</p>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><ul>
+<li>2）使用#，可表示 1-6 级标题。<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 一级标题</span>
+<span class="token comment" spellcheck="true">## 二级标题</span>
+<span class="token comment" spellcheck="true">### 三级标题</span>
+<span class="token comment" spellcheck="true">#### 四级标题</span>
+<span class="token comment" spellcheck="true">##### 五级标题</span>
+<span class="token comment" spellcheck="true">###### 六级标题</span>
+</code></pre>
+效果：</li>
+</ul>
+<h1 id="一级标题-1"><a href="#一级标题-1" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题-1"><a href="#二级标题-1" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><h4 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h4><p>段落的前后要有空行，所谓的空行是指没有文字内容。若想在段内强制换行的方式是使用两个以上空格加上回车（引用中换行省略回车）。</p>
+<h4 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a>区块引用</h4><p>在段落的每行或者只在第一行使用符号&gt;,还可使用多个嵌套引用，如：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token operator">></span> 区块引用
+<span class="token operator">>></span> 嵌套引用
+</code></pre>
+<p>效果：</p>
+<blockquote>
+<p>区块引用</p>
+<blockquote>
+<p>嵌套引用</p>
+</blockquote>
+</blockquote>
+<h4 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a>代码区块</h4><p>代码区块的建立是在每行加上 4 个空格或者一个制表符（如同写代码一样）。如<br>普通段落：</p>
+<p>export default class Page extends Component{<br>render(){<br>return(    </p>
+<p>)<br>}<br>}    </p>
+<p>代码区块：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token function">export</span> default class Page extends Component<span class="token punctuation">{</span>
+    render<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+        return<span class="token punctuation">(</span>
+            <span class="token operator">&lt;</span>div<span class="token operator">></span><span class="token operator">&lt;</span>/div<span class="token operator">></span>
+        <span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>注意:需要和普通段落之间存在空行。</p>
+<h4 id="强调"><a href="#强调" class="headerlink" title="强调"></a>强调</h4><p>在强调内容两侧分别加上*或者_，如：</p>
+<pre class=" language-bash"><code class="language-bash">*斜体*，_斜体_
+**粗体**，__粗体__
+</code></pre>
+<p>效果：</p>
+<p><em>斜体</em>，_斜体_<br><strong>粗体</strong>，<strong>粗体</strong></p>
+<h4 id="列表"><a href="#列表" class="headerlink" title="列表"></a>列表</h4><p>使用·、+、或-标记无序列表，如：</p>
+<pre class=" language-bash"><code class="language-bash">-（+_） 第一项 -（+_） 第二项 - （+\*）第三项
+</code></pre>
+<p>注意：标记后面最少有一个空格或制表符。若不在引用区块中，必须和前方段落之间存在空行。</p>
+<p>效果：</p>
+<ul>
+<li>第一项     </li>
+<li>第二项 </li>
+<li>第三项</li>
+</ul>
+<p>有序列表的标记方式是将上述的符号换成数字,并辅以.，如：</p>
+<p>效果：</p>
+<ol>
+<li>第一项     </li>
+<li>第二项 </li>
+<li>第三项</li>
+</ol>
+<h4 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h4><p>分割线最常使用就是三个或以上*，还可以使用-和_。</p>
+<pre class=" language-bash"><code class="language-bash">****
+</code></pre>
+<p>效果：</p>
+<hr>
+<h4 id="链接"><a href="#链接" class="headerlink" title="链接"></a>链接</h4><p>链接可以由两种形式生成：行内式和参考式。\<br>行内式：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token punctuation">[</span>https://juejin.im/timeline<span class="token punctuation">]</span><span class="token punctuation">(</span>https://juejin.im/timeline<span class="token punctuation">)</span>
+</code></pre>
+<p>效果：</p>
+<p><a href="https://juejin.im/timeline" target="_blank" rel="noopener">https://juejin.im/timeline</a></p>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><p>添加图片的形式和链接相似，只需在链接的基础上前方加一个！。</p>
+<pre class=" language-bash"><code class="language-bash">！<span class="token punctuation">[</span>https://juejin.im/timeline<span class="token punctuation">]</span><span class="token punctuation">(</span>https://juejin.im/timeline<span class="token punctuation">)</span>
+</code></pre>
+<h4 id="反斜杠"><a href="#反斜杠" class="headerlink" title="反斜杠"></a>反斜杠</h4><p>起到标记作用。如：</p>
+<pre class=" language-bash"><code class="language-bash"><span class="token variable"><span class="token variable">`</span>ctrl+a<span class="token variable">`</span></span>
+</code></pre>
+<p>效果：</p>
+<p><code>ctrl+a</code></p>
+<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><p>现在的前端基本上都用上了前端构建工具，那就难免要写一些readme等等的说明性文件，但是这样的文件一般都是.md的文件,掌握.md文件的书写规则，对提升自己的能力有很大的帮助。此文参考<a href="http://yunxing.fun/2019/04/02/chu-ci-da-jian-bo-ke/" target="_blank" rel="noopener">http://yunxing.fun/2019/04/02/chu-ci-da-jian-bo-ke/</a>)，感谢技术分享。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/04/09/di-er-ge/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-markdown" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -268,6 +426,17 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">web</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
@@ -393,6 +562,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
