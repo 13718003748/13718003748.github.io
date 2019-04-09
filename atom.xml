@@ -43,17 +43,18 @@
     <link href="http://huangqiang.work/2019/04/07/markdown/"/>
     <id>http://huangqiang.work/2019/04/07/markdown/</id>
     <published>2019-04-07T14:14:22.393Z</published>
-    <updated>2019-04-09T15:44:01.387Z</updated>
+    <updated>2019-04-09T15:51:47.424Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h2 id=&quot;序言&quot;&gt;&lt;a href=&quot;#序言&quot; class=&quot;headerlink&quot; title=&quot;序言&quot;&gt;&lt;/a&gt;序言&lt;/h2&gt;&lt;p&gt;第一次搭建博客，为了记录自己工作中遇到的技术问题，人有的时候是懒惰的，学的技术点记不住，一段时间再次看，依然觉得陌生，甚至找不到文章出处了，因此搭建一个博客记录自己的工作积累，方便自己查看。&lt;/p&gt;
+&lt;h3 id=&quot;Markdown-是什么？&quot;&gt;&lt;a href=&quot;#Markdown-是什么？&quot; class=&quot;headerlink&quot; title=&quot;Markdown 是什么？&quot;&gt;&lt;/a&gt;Markdown 是什么？&lt;/h3&gt;&lt;p&gt;Markdown 是一种轻量级标记语言，它以纯文本形式(易读、易写、易更改)编写文档，并最终以 HTML 格式发布。&lt;br&gt;Markdown 也可以理解为将以 MARKDOWN 语法编写的语言转换成 HTML 内容的工具。&lt;/p&gt;
+&lt;h3 id=&quot;为什么使用它？&quot;&gt;&lt;a href=&quot;#为什么使用它？&quot; class=&quot;headerlink&quot; title=&quot;为什么使用它？&quot;&gt;&lt;/a&gt;为什么使用它？&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;它是易读（看起来舒服）、易写（语法简单）、易更改纯文本。处处体现着极简主义的影子。&lt;/li&gt;
+&lt;li&gt;兼容 HTML，可以转换为 HTML 格式发布。&lt;br&gt;跨平台使用。&lt;/li&gt;
+&lt;li&gt;越来越多的网站支持 Markdown。&lt;/li&gt;
+&lt;li&gt;更方便清晰地组织你的电子邮件。（Markdown-here, Airmail）&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
