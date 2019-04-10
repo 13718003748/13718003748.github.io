@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-04-10T14:22:21.890Z</updated>
+  <updated>2019-04-10T15:15:02.465Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -17,11 +17,11 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>markdown文件的基本常用编写语法</title>
+    <title>markdown基本语法</title>
     <link href="http://huangqiang.work/2019/04/09/markdown/"/>
     <id>http://huangqiang.work/2019/04/09/markdown/</id>
     <published>2019-04-09T15:32:14.894Z</published>
-    <updated>2019-04-10T14:22:21.890Z</updated>
+    <updated>2019-04-10T15:15:02.465Z</updated>
     
     <summary type="html">
     
@@ -30,6 +30,8 @@
     
     </summary>
     
+    
+      <category term="web" scheme="http://huangqiang.work/tags/web/"/>
     
   </entry>
   
