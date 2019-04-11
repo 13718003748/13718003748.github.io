@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="躁动小猴">
 <meta property="og:description" content="call,apply,bind改变this,手动实现call,apply,bind">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-11T15:44:52.086Z">
+<meta property="og:updated_time" content="2019-04-11T15:55:55.519Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手写call、apply、bind实现">
 <meta name="twitter:description" content="call,apply,bind改变this,手动实现call,apply,bind">
@@ -236,7 +236,7 @@ Person1 <span class="token operator">=</span> <span class="token punctuation">{<
 Person<span class="token punctuation">.</span>say<span class="token punctuation">.</span><span class="token function">call</span><span class="token punctuation">(</span>Person1<span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">)</span><span class="token comment" spellcheck="true">//我叫Tom1我今年18</span>
 </code></pre>
 <ul>
-<li>apply\<br>  apply注意第二个参数是数组，方法与call类似</li>
+<li>apply<br>  apply注意第二个参数是数组，方法与call类似</li>
 </ul>
 <pre class=" language-js"><code class="language-js">    Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>myApply <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 如果没有传或传的值为空对象 context指向window</span>
@@ -252,7 +252,7 @@ Person<span class="token punctuation">.</span>say<span class="token punctuation"
     <span class="token punctuation">}</span>
 </code></pre>
 <ul>
-<li>bind\<br>bind和call以及apply有所区别，bind主要有以下特点：<br>(1) 函数调用，改变this；<br>(2) 返回一个绑定this的函数;<br>(3) 接收多个参数;<br>(4) 支持柯里化形式传参 fn(1)(2)。</li>
+<li>bind<br>bind和call以及apply有所区别，bind主要有以下特点：<br>(1) 函数调用，改变this；<br>(2) 返回一个绑定this的函数;<br>(3) 接收多个参数;<br>(4) 支持柯里化形式传参 fn(1)(2)。</li>
 </ul>
 <pre class=" language-js"><code class="language-js">Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>bind <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">//返回一个绑定this的函数，我们需要在此保存this</span>
