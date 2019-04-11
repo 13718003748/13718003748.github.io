@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="躁动小猴">
 <meta property="og:description" content="call,apply,bind改变this,手动实现call,apply,bind">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-11T15:41:41.515Z">
+<meta property="og:updated_time" content="2019-04-11T15:44:52.086Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手写call、apply、bind实现">
 <meta name="twitter:description" content="call,apply,bind改变this,手动实现call,apply,bind">
@@ -164,9 +164,8 @@
     <div class="article-entry" itemprop="articleBody">
       
         <p>今天看到一道在寒冬季的大厂面试题，手动实现call、apply、bind,对其产生极大的兴趣，之前并没有想过其中的原理，只是在工作中直接使用，只了解能够改变this指向，但具体如何改变的并不了解，今天刚好看到，记录一下是如何实现的。<br>了解不够深入，有误的地方希望指出。</p>
-<h3 id="call、apply、bind的区别"><a href="#call、apply、bind的区别" class="headerlink" title="call、apply、bind的区别"></a>call、apply、bind的区别</h3><a id="more"></a>
-<ul>
-<li>call<br>call接收多个参数，第一个为函数上下文，也就是this，后面参数为函数自身参数。</li>
+<h3 id="call、apply、bind的区别"><a href="#call、apply、bind的区别" class="headerlink" title="call、apply、bind的区别"></a>call、apply、bind的区别</h3><ul>
+<li>call<br>call接收多个参数，第一个为函数上下文，也就是this，后面参数为函数自身参数。<a id="more"></a></li>
 <li>apply<br>apply接收两个参数，第一个参数为函数上下文this，第二个参数为函数参数，但是是通过数组的形式传入。</li>
 <li>bind<br>bind接收多个参数，第一个是bind返回值是一个函数上下文的this，不会立即执行。</li>
 </ul>
@@ -210,7 +209,7 @@ fn <span class="token operator">=</span> allName<span class="token punctuation">
 <span class="token function">fn</span><span class="token punctuation">(</span><span class="token string">'前端'</span><span class="token punctuation">,</span> <span class="token string">'好好学习天天向上'</span><span class="token punctuation">)</span>
 </code></pre>
 <h3 id="手动实现call、apply、bind"><a href="#手动实现call、apply、bind" class="headerlink" title="手动实现call、apply、bind"></a>手动实现call、apply、bind</h3><ul>
-<li>call<br> 实现call需要考虑:<br> (1) call支持多个参数，有可能一个也不没有、考虑多参数时要把参数传给扩展方法;\<br> (2) 考虑多参数时要把参数传给扩展方法;\<br> (3) 给上下文定义的函数要保持唯一;\<br> (4) 扩展完我们需要吧自定义函数删除;\</li>
+<li>call<br> 实现call需要考虑:<br> (1) call支持多个参数，有可能一个也不没有、考虑多参数时要把参数传给扩展方法;<br> (2) 考虑多参数时要把参数传给扩展方法;<br> (3) 给上下文定义的函数要保持唯一;<br> (4) 扩展完我们需要吧自定义函数删除;</li>
 </ul>
 <pre class=" language-js"><code class="language-js">Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>myCall1 <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">// 如果没有传或传的值为空对象 context指向window</span>
@@ -253,7 +252,7 @@ Person<span class="token punctuation">.</span>say<span class="token punctuation"
     <span class="token punctuation">}</span>
 </code></pre>
 <ul>
-<li>bind\<br>bind和call以及apply有所区别，bind主要有以下特点：\<br>(1) 函数调用，改变this；<br>(2) 返回一个绑定this的函数;<br>(3) 接收多个参数;<br>(4) 支持柯里化形式传参 fn(1)(2)。</li>
+<li>bind\<br>bind和call以及apply有所区别，bind主要有以下特点：<br>(1) 函数调用，改变this；<br>(2) 返回一个绑定this的函数;<br>(3) 接收多个参数;<br>(4) 支持柯里化形式传参 fn(1)(2)。</li>
 </ul>
 <pre class=" language-js"><code class="language-js">Function<span class="token punctuation">.</span>prototype<span class="token punctuation">.</span>bind <span class="token operator">=</span> <span class="token keyword">function</span><span class="token punctuation">(</span>context<span class="token punctuation">)</span> <span class="token punctuation">{</span>
     <span class="token comment" spellcheck="true">//返回一个绑定this的函数，我们需要在此保存this</span>
@@ -276,8 +275,8 @@ Person<span class="token punctuation">.</span>say<span class="token punctuation"
 <span class="token function">fn</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 <span class="token function">fn</span><span class="token punctuation">(</span><span class="token number">18</span><span class="token punctuation">)</span>
 </code></pre>
-<pre><code>此文章参考各前端大牛分享，总结出来，在此感谢大佬的分享！
-</code></pre>
+<p>此文章参考各前端大牛分享，总结出来，在此感谢大佬的分享！</p>
+
       
 
       
@@ -544,11 +543,11 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color4">web</a>
+                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">javascript</a>
+                <a href="javascript:void(0)" class="js-tag color4">web</a>
               </li>
             
             <div class="clearfix"></div>
