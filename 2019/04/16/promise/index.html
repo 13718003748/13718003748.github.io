@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="躁动小猴">
 <meta property="og:description" content="日常工作中，经常会遇到需要异步执行的情况，es6之前我们经常处理方法是使用回调来处理，但是使用回调如果层级太多，逻辑会比较复杂，代码比较乱，不方便后期的维护，因此我们使用promise来处理异步执行情况，使用链式操作，使得代码逻辑清晰，易于维护。 三种状态 pending/fulfilled(resolved)/reject; 当处于pending状态的时候，可以转移到fulfilled(reso">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-04-16T14:46:31.603Z">
+<meta property="og:updated_time" content="2019-04-16T14:48:15.195Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="手动模拟promise">
 <meta name="twitter:description" content="日常工作中，经常会遇到需要异步执行的情况，es6之前我们经常处理方法是使用回调来处理，但是使用回调如果层级太多，逻辑会比较复杂，代码比较乱，不方便后期的维护，因此我们使用promise来处理异步执行情况，使用链式操作，使得代码逻辑清晰，易于维护。 三种状态 pending/fulfilled(resolved)/reject; 当处于pending状态的时候，可以转移到fulfilled(reso">
@@ -172,6 +172,7 @@
 <li>当处于pending状态的时候，可以转移到fulfilled(resolved)或者rejected;</li>
 <li>当处于fulfilled(resolved)状态或者rejected状态的时候，就不可改变。</li>
 </ul>
+<a id="more"></a>
 <h3 id="promise的用法"><a href="#promise的用法" class="headerlink" title="promise的用法"></a>promise的用法</h3><pre class=" language-js"><code class="language-js"><span class="token keyword">var</span> promise <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">promise</span> <span class="token punctuation">(</span><span class="token punctuation">(</span>resolve<span class="token punctuation">,</span>reject<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">{</span>
     <span class="token keyword">if</span><span class="token punctuation">(</span>操作成功<span class="token punctuation">)</span> <span class="token punctuation">{</span>
         <span class="token function">resolve</span><span class="token punctuation">(</span>value<span class="token punctuation">)</span>

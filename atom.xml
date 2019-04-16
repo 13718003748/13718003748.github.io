@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-04-16T14:46:31.603Z</updated>
+  <updated>2019-04-16T14:48:15.195Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -21,18 +21,16 @@
     <link href="http://huangqiang.work/2019/04/16/promise/"/>
     <id>http://huangqiang.work/2019/04/16/promise/</id>
     <published>2019-04-16T13:52:02.000Z</published>
-    <updated>2019-04-16T14:46:31.603Z</updated>
+    <updated>2019-04-16T14:48:15.195Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;日常工作中，经常会遇到需要异步执行的情况，es6之前我们经常处理方法是使用回调来处理，但是使用回调如果层级太多，逻辑会比较复杂，代码比较乱，不方便后期的维护，因此我们使用promise来处理异步执行情况，使用链式操作，使得代码逻辑清晰，易于维护。&lt;/p&gt;
-&lt;h3
-        
-      
+      &lt;p&gt;日常工作中，经常会遇到需要异步执行的情况，es6之前我们经常处理方法是使用回调来处理，但是使用回调如果层级太多，逻辑会比较复杂，代码比较乱，不方便后期的维护，因此我们使用promise来处理异步执行情况，使用链式操作，使得代码逻辑清晰，易于维护。&lt;/p&gt;
+&lt;h3 id=&quot;三种状态&quot;&gt;&lt;a href=&quot;#三种状态&quot; class=&quot;headerlink&quot; title=&quot;三种状态&quot;&gt;&lt;/a&gt;三种状态&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;pending/fulfilled(resolved)/reject;&lt;/li&gt;
+&lt;li&gt;当处于pending状态的时候，可以转移到fulfilled(resolved)或者rejected;&lt;/li&gt;
+&lt;li&gt;当处于fulfilled(resolved)状态或者rejected状态的时候，就不可改变。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     
