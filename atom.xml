@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-04-16T14:48:15.195Z</updated>
+  <updated>2019-04-16T14:51:24.765Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://huangqiang.work/2019/04/16/promise/"/>
     <id>http://huangqiang.work/2019/04/16/promise/</id>
     <published>2019-04-16T13:52:02.000Z</published>
-    <updated>2019-04-16T14:48:15.195Z</updated>
+    <updated>2019-04-16T14:51:24.765Z</updated>
     
     <summary type="html">
     
@@ -35,7 +35,9 @@
     </summary>
     
     
-      <category term="javascript es6" scheme="http://huangqiang.work/tags/javascript-es6/"/>
+      <category term="javascript" scheme="http://huangqiang.work/tags/javascript/"/>
+    
+      <category term="es6" scheme="http://huangqiang.work/tags/es6/"/>
     
   </entry>
   
