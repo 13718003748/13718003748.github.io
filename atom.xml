@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-04-16T14:51:24.765Z</updated>
+  <updated>2019-05-08T15:18:26.519Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>一款拖放排序插件</title>
+    <link href="http://huangqiang.work/2019/05/08/sortable/"/>
+    <id>http://huangqiang.work/2019/05/08/sortable/</id>
+    <published>2019-05-08T15:11:35.000Z</published>
+    <updated>2019-05-08T15:18:26.519Z</updated>
+    
+    <summary type="html">
+    
+      拖拽组件
+    
+    </summary>
+    
+    
+      <category term="javaScript sortable.js" scheme="http://huangqiang.work/tags/javaScript-sortable-js/"/>
+    
+  </entry>
   
   <entry>
     <title>手动模拟promise</title>
@@ -64,7 +82,7 @@
     <link href="http://huangqiang.work/2019/04/09/markdown/"/>
     <id>http://huangqiang.work/2019/04/09/markdown/</id>
     <published>2019-04-09T15:32:14.894Z</published>
-    <updated>2019-04-11T15:46:37.709Z</updated>
+    <updated>2019-04-16T15:07:25.854Z</updated>
     
     <summary type="html">
     
