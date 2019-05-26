@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-05-26T12:44:17.501Z</updated>
+  <updated>2019-05-26T12:49:30.007Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -21,18 +21,12 @@
     <link href="http://huangqiang.work/2019/05/26/webpack/"/>
     <id>http://huangqiang.work/2019/05/26/webpack/</id>
     <published>2019-05-26T12:14:55.000Z</published>
-    <updated>2019-05-26T12:44:17.501Z</updated>
+    <updated>2019-05-26T12:49:30.007Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;最近了解到很多公司面试喜欢问是否了解webpack原理，所以查阅相关资料，简单记录一下wenback原理，方便自己及时查阅。&lt;/p&gt;
-&lt;h3 id=&quot;webpack详解&quot;&gt;&lt;a href=&quot;#webpack详解&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;p&gt;最近了解到很多公司面试喜欢问是否了解webpack原理，所以查阅相关资料，简单记录一下wenback原理，方便自己及时查阅。&lt;/p&gt;
+&lt;h3 id=&quot;webpack详解&quot;&gt;&lt;a href=&quot;#webpack详解&quot; class=&quot;headerlink&quot; title=&quot;webpack详解&quot;&gt;&lt;/a&gt;webpack详解&lt;/h3&gt;&lt;p&gt;webpack是一个打包工具，他的宗旨是一切静态资源即可打包。有人就会问为什么要webpack？webpack是现代前端技术的基石，常规的开发方式，比如jquery,html,css静态网页开发已经落后了。现在是MVVM的时代，数据驱动界面。webpack将现代js开发中的各种新型有用的技术，集合打包。&lt;/p&gt;
     
     </summary>
     
