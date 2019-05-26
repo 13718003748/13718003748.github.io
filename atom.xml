@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-05-20T15:17:19.611Z</updated>
+  <updated>2019-05-26T12:44:17.501Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>webpack</title>
+    <link href="http://huangqiang.work/2019/05/26/webpack/"/>
+    <id>http://huangqiang.work/2019/05/26/webpack/</id>
+    <published>2019-05-26T12:14:55.000Z</published>
+    <updated>2019-05-26T12:44:17.501Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;最近了解到很多公司面试喜欢问是否了解webpack原理，所以查阅相关资料，简单记录一下wenback原理，方便自己及时查阅。&lt;/p&gt;
+&lt;h3 id=&quot;webpack详解&quot;&gt;&lt;a href=&quot;#webpack详解&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="web" scheme="http://huangqiang.work/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>一款拖放排序插件</title>
