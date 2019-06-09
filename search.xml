@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>滚动穿透问题</title>
+      <link href="/2019/06/09/scroll/"/>
+      <url>/2019/06/09/scroll/</url>
+      
+        <content type="html"><![CDATA[<p>最近遇到一个bug,点击页面按钮，弹出一个弹框。其中弹框内容为动态添加，可能会出现比较多，为了加强用户体验，将弹框的高设定为一个最大值，超出最大值则设置滚动条。但是最后发现，出现滚动条后，滑动弹框里面的内容，弹框下面的页面内容会随着一起滑动。随即查阅相关资料，有一些解决方案，记录下来。</p><h3 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h3><ul><li>打开模态框时，给body加上类名preventScroll；</li><li>关闭模态框时，移除body上的preventScroll类名。</li></ul><a id="more"></a><pre class=" language-js"><code class="language-js"><span class="token punctuation">.</span>preventScroll <span class="token punctuation">{</span>    height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token operator">%</span><span class="token punctuation">;</span>    overflow<span class="token punctuation">:</span> hidden<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>不过此方法只适用于PC端，移动端无效。</p><h3 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h3><ul><li>position: fixed</li></ul><pre class=" language-js"><code class="language-js"><span class="token punctuation">.</span>preventScroll <span class="token punctuation">{</span>    position<span class="token punctuation">:</span> fixed<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre><p>此方法会失去滚动条位置，需要通过获得滚动条初始位置，然后通过js将其还原回去。</p><h3 id="方案三"><a href="#方案三" class="headerlink" title="方案三"></a>方案三</h3><ul><li>调用fixedBody()；</li><li>打开模态框；</li><li>关闭模态框；</li><li>调用looseBody()。    </li></ul><p>1.使用position:fixed禁止body滚动；<br>2.使用scrollTop、top值解决滚动记录丢失的bug。</p><pre class=" language-js"><code class="language-js"><span class="token comment" spellcheck="true">//打开模态框前调用</span><span class="token keyword">function</span> <span class="token function">fixedBody</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">var</span> scrollTop <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">||</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop<span class="token punctuation">;</span>    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>cssText <span class="token operator">+</span><span class="token operator">=</span> <span class="token string">'position:fixed;top:-'</span> <span class="token operator">+</span> scrollTop <span class="token operator">+</span> <span class="token string">'px;'</span><span class="token punctuation">;</span><span class="token punctuation">}</span><span class="token comment" spellcheck="true">//关闭模态框后调用</span><span class="token keyword">function</span> <span class="token function">looseBody</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>    <span class="token keyword">var</span> body <span class="token operator">=</span> document<span class="token punctuation">.</span>body<span class="token punctuation">;</span>    body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>position <span class="token operator">=</span> <span class="token string">'static'</span><span class="token punctuation">;</span>    <span class="token keyword">var</span> top <span class="token operator">=</span> body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top<span class="token punctuation">;</span>    document<span class="token punctuation">.</span>body<span class="token punctuation">.</span>scrollTop <span class="token operator">=</span> document<span class="token punctuation">.</span>documentElement<span class="token punctuation">.</span>scrollTop <span class="token operator">=</span> <span class="token operator">-</span><span class="token function">parseInt</span><span class="token punctuation">(</span>top<span class="token punctuation">)</span><span class="token punctuation">;</span>    body<span class="token punctuation">.</span>style<span class="token punctuation">.</span>top <span class="token operator">=</span> <span class="token string">''</span><span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>懒加载和预加载原理</title>
       <link href="/2019/05/29/lazyload/"/>
       <url>/2019/05/29/lazyload/</url>

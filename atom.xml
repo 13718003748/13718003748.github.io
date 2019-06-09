@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://huangqiang.work/"/>
-  <updated>2019-05-29T13:41:50.992Z</updated>
+  <updated>2019-06-09T13:38:56.042Z</updated>
   <id>http://huangqiang.work/</id>
   
   <author>
@@ -15,6 +15,24 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>滚动穿透问题</title>
+    <link href="http://huangqiang.work/2019/06/09/scroll/"/>
+    <id>http://huangqiang.work/2019/06/09/scroll/</id>
+    <published>2019-06-09T13:24:35.000Z</published>
+    <updated>2019-06-09T13:38:56.042Z</updated>
+    
+    <summary type="html">
+    
+      解决滚动穿透问题
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://huangqiang.work/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>懒加载和预加载原理</title>
